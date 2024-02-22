@@ -39,3 +39,18 @@ import paho.mqtt.publish as publish
 
 publish.single("paho/test/topic", "payload", hostname="mqtt.eclipseprojects.io")
 ```
+
+## INFLUXDB
+
+### InfluxDB Cloud Serverless
+
+#### Influx CLI
+
+- Install influx CLI [source](https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/)
+- Configure connection `influx config create --host-url CLUSTER_URL --org pcolt --token INFLUX_DATA_TOKEN --active --config-name sensors1`
+- Write data [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/write/)
+`influx write --bucket sensors1 -p s "home2,location=studio light=600 1708502477"`
+
+#### UI
+
+- query data [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/query/) `SELECT * from home2;`

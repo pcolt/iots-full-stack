@@ -1,13 +1,13 @@
-# simple IoTs data full-stack project
+# 🧮 simple IoTs data full-stack project
 
-A simple project to experiment with IoTs, data handling and visualistion on the web.  
+A simple project to experiment with IoTs, data handling and web apps.  
 This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co/).  
 
 - ✅ step 1: an Arduino with analog photoresistor converts data to digital, which is sent serially through usb to a Raspberry which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
 - step 2: add a backend Node.js that queries the data from db, the data can be served as REST api or as single-page web application (experiment with Google Cloud Functions)
 - step 3: add React Native mobile app
 
-# Working notes
+# 📚 Working notes
 
 ## Network
 

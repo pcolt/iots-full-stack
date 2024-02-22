@@ -7,12 +7,16 @@ Connect via ssh `ssh pi@[ip-address]`
 
 ## Python
 
+### Virtualenv
+
 install packages via virtual env [source](https://www.baeldung.com/linux/pip-fix-externally-managed-environment-error)
 - install venv `sudo apt install python3-venv`
 - create virtual envoirment `python3 -m venv ~/mypythonvirtualenv`
 - activate `source mypythonvirtualenv/bin/activate`  
 `(mypythonvirtualenv) $`
 - install needed packages `pip install influxdb3-python`
+
+In VSCode activate the environment with `Ctrl+Shift+P` and search for `Python: Select Interpreter`
 
 ## MQTT
 
@@ -62,4 +66,5 @@ publish.single("paho/test/topic", "payload", hostname="mqtt.eclipseprojects.io")
 
 #### UI
 
-- query data [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/query/) `SELECT * from home2;`
+- query all data from one table [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/query/) `SELECT * from home2;`
+- query all tables in bucket `SHOW TABLES;`

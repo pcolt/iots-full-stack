@@ -5,6 +5,15 @@
 
 Connect via ssh `ssh pi@[ip-address]`
 
+## Python
+
+install packages via virtual env [source](https://www.baeldung.com/linux/pip-fix-externally-managed-environment-error)
+- install venv `sudo apt install python3-venv`
+- create virtual envoirment `python3 -m venv ~/mypythonvirtualenv`
+- activate `source mypythonvirtualenv/bin/activate`  
+`(mypythonvirtualenv) $`
+- install needed packages `pip install influxdb3-python`
+
 ## MQTT
 
 ### Mosquitto

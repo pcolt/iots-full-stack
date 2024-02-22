@@ -1,3 +1,5 @@
+# get serial data from Arduino and publish to MQTT broker
+
 import serial
 import time
 import paho.mqtt.publish as publish

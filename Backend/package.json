@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@influxdata/influxdb3-client": "^0.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2"
+  },
+  "name": "iots-full-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint . --ext .ts",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-ts": "^1.6.2",
+    "@types/express": "^4.17.21",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}

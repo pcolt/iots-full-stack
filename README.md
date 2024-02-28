@@ -18,24 +18,26 @@ This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co
 
 Connect via ssh `ssh pi@[ip-address]`
 
-## Python
+## Arduino part
 
-### Virtualenv
+README in [Arduino](/Arduino/) folder.
 
-install packages via virtual env [source](https://www.baeldung.com/linux/pip-fix-externally-managed-environment-error)
-- install venv `sudo apt install python3-venv`
-- create virtual envoirment `python3 -m venv ~/mypythonvirtualenv`
-- activate `source mypythonvirtualenv/bin/activate`  
-`(mypythonvirtualenv) $`
-- install needed packages `pip install influxdb3-python`
+## Raspberry part
 
-In VSCode activate the environment with `Ctrl+Shift+P` and search for `Python: Select Interpreter`
+README in [Raspberry](/Raspberry/) folder.
 
-## MQTT
+## Backend part
 
-### Mosquitto
+README in [Backend](/Backend/) folder.
 
-[source](https://logicaprogrammabile.it/mqtt-installare-mosquitto-raspberry-pi-progetti-iot/)
+## General
+
+### MQTT
+
+#### Mosquitto
+
+
+[Tutorial](https://logicaprogrammabile.it/mqtt-installare-mosquitto-raspberry-pi-progetti-iot/)
 - Install broker (on laptop)  
 `sudo apt-get install mosquitto`  
 `sudo service mosquitto status`  
@@ -54,30 +56,19 @@ allow_anonymous true
 - pubblish to a topic (from Raspberry)
 `mosquitto_pub -h 192.168.1.65 -t "my_topic" -m "hello world"`
 
-### Paho - Python
 
-- Publish a single message to a broker, then disconnect cleanly. 
-[Source](https://github.com/eclipse/paho.mqtt.python?tab=readme-ov-file#single)
+### INFLUXDB
 
-Example:
-```python
-import paho.mqtt.publish as publish
+#### InfluxDB Cloud Serverless
 
-publish.single("paho/test/topic", "payload", hostname="mqtt.eclipseprojects.io")
-```
+##### Influx CLI
 
-## INFLUXDB
-
-### InfluxDB Cloud Serverless
-
-#### Influx CLI
-
-- Install influx CLI [source](https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/)
+- Install influx CLI [Docs](https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/)
 - Configure connection `influx config create --host-url CLUSTER_URL --org pcolt --token INFLUX_DATA_TOKEN --active --config-name sensors1`
-- Write data [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/write/)
+- Write data [Docs](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/write/)
 `influx write --bucket sensors1 -p s "home2,location=studio light=600 1708502477"`
 
-#### UI
+##### UI
 
-- query all data from one table [source](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/query/) `SELECT * from home2;`
+- query all data from one table [Docs](https://docs.influxdata.com/influxdb/cloud-serverless/get-started/query/) `SELECT * from home2;`
 - query all tables in bucket `SHOW TABLES;`

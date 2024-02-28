@@ -14,7 +14,8 @@ INFLUXDB_TOKEN = 'token_from_influxdata_cloud'
 
 ## Usage
 
-Start in dev with auto-reload: `npm run dev`    
+Start in dev with auto-reload: `npm run dev`  
+Check data on: http://localhost:3000/measurements   
 Lint: `npm run lint`  
 Compile Typescript files: `npm run tsc`  
 Run compilet files: `npm start`  

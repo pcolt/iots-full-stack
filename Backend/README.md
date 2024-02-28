@@ -1,4 +1,4 @@
-# Backend 🏗️ (work in progress)
+# Backend
 
  Backend in Node.js that queries the data from InfluxDb, the data is served as REST api or as single-page web application (experiment with Google Cloud Functions)
 
@@ -23,4 +23,4 @@ Run compilet files: `npm start`
 
 ### InfluxDB
 
-[Documentation](https://github.com/InfluxCommunity/influxdb3-js/tree/main) of Javascript library to interact with InfluxDB 3
+Javascript library to interact with InfluxDB 3 [Docs](https://github.com/InfluxCommunity/influxdb3-js/tree/main)

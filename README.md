@@ -6,10 +6,10 @@ This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co
 - ✅ step 1: an [Arduino](/Arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/Raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
 - ✅ step 2: [backend](/Backend/) in Node.js that queries the data from InfluxDb and serves it with Express 
 - 🏗️ step 3: frontend with React 
-- step 3: migrate backend to Google Cloud Functions
-- step 3: add React Native mobile app
-- step 4: change/add sensor to CO2/other 
-- step 5: experiment with AI
+- step 4: migrate backend to Google Cloud Functions
+- step 5: add React Native mobile app
+- step 6: change/add sensor to CO2/other 
+- step 7: experiment with AI
 
 # 📚 Working notes
 

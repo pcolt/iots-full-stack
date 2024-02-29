@@ -3,8 +3,8 @@
 A project to experiment with IoTs, data handling and web apps.  
 This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co/).  
 
-- ✅ step 1: an [Arduino](/Arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/Raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
-- ✅ step 2: [Backend](/Backend/) in Node.js that queries the data from InfluxDb and serves it with Express 
+- ✅ step 1: an [Arduino](/Arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
+- ✅ step 2: [Backend](/backend/) in Node.js that queries the data from InfluxDb and serves it with Express 
 - 🏗️ step 3: Frontend with React 
 - step 4: migrate backend to Google Cloud Functions
 - step 5: React Native mobile app
@@ -26,11 +26,11 @@ README in [Arduino](/Arduino/) folder.
 
 ## Raspberry part
 
-README in [Raspberry](/Raspberry/) folder.
+README in [Raspberry](/raspberry/) folder.
 
 ## Backend part
 
-README in [Backend](/Backend/) folder.
+README in [Backend](/backend/) folder.
 
 ## General
 
@@ -44,7 +44,7 @@ Because this repo has multiple sub-repos: in order to have Vscode ESlint plugin 
 
 ```json
 "eslint.workingDirectories": [
-    "./Backend", "./Frontend
+    "./backend", "./frontend
 ]
 ```
 

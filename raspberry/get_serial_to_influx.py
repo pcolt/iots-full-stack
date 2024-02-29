@@ -29,7 +29,7 @@ def writeToInfluxDB(value):
 
 
 while True:
-  time.sleep(10)                                # upload a measurment every 10 seconds
+  time.sleep(1)                                 # upload a measurment every 1 seconds
   ser.flushInput()                              # flush all last serial data not usefull
   line = ser.readline().decode('utf-8').rstrip()    # read first complete line from serial communication
   print(line)

@@ -34,6 +34,20 @@ README in [Backend](/Backend/) folder.
 
 ## General
 
+### VSCode REST Client
+
+HTTP requests to the express endpoints are in `requests` folder (Installation of VSCode plugin REST Client is required).
+
+### VSCode ESlint plugin configuration
+
+Because this repo has multiple sub-repos: in order to have Vscode ESlint plugin working, add to the Vscode settings (File > Preferences > Settings) the parameter: 
+
+```json
+"eslint.workingDirectories": [
+    "./Backend", "./Frontend
+]
+```
+
 ### MQTT
 
 #### Mosquitto

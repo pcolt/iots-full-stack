@@ -3,7 +3,7 @@
 A project to experiment with IoTs, data handling and web apps.  
 This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co/).  
 
-- ✅ step 1: an [Arduino](/Arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
+- ✅ step 1: an [Arduino](/arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
 - ✅ step 2: [Backend](/backend/) in Node.js that queries the data from InfluxDb and serves it with Express 
 - 🏗️ step 3: Frontend with React 
 - step 4: migrate backend to Google Cloud Functions

@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      axios.get('http://localhost:3000/measurements').then(response => {
+      axios.get('http://localhost:3000/measures').then(response => {
         console.log(response.data);
         setValue(response.data[0].light)
       })

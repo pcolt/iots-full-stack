@@ -4,23 +4,23 @@ import newInfluxClient from '../utils/influxdb'
 import { Measurement } from '../types'
 
 
-async function getLastMeasurement() {
+async function getLastMeasure() {
 
   // eslint-disable-next-line @stylistic/ts/quotes
   const query = `SELECT "light", "location", "time" FROM "my_home" order by "time" desc limit 1`
 
   const influxClient = newInfluxClient()
   const rows = influxClient.query(query, 'sensors1')
-  const measurements: Measurement[] = []
+  const measures: Measurement[] = []
 
   for await (const row of rows) {
     if ('time' in row && typeof row.time === 'number' && 'location' in row && typeof row.location === 'string' && 'light' in row && typeof row.light === 'bigint') {
-      const measurement = {
+      const measure = {
         time: row.time,
         location: row.location,
         light: Number(row.light)      // convert bigint to number
       }
-      measurements.push(measurement)
+      measures.push(measure)
     } else {
       await influxClient.close()
       throw new Error('Invalid data from InfluxDB!')
@@ -30,11 +30,11 @@ async function getLastMeasurement() {
 
   await influxClient.close()
 
-  return measurements
+  return measures
 }
 
 measurementsRouter.get('/', (_req, res) => {
-  getLastMeasurement()
+  getLastMeasure()
     .then(data => {
       console.log('Measurements retrieved')
       console.log(data)

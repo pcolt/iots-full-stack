@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
-import measurementsRouter from './controllers/measurements_controller'
+import measurementsRouter from './controllers/measures_controller'
 
 const port = process.env.PORT
 
@@ -14,7 +14,7 @@ app.use(cors())                     // allow cors
 
 // erry
 
-app.use('/measurements', measurementsRouter)
+app.use('/measures', measurementsRouter)
 
 
 app.listen(port, () => {

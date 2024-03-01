@@ -23,7 +23,7 @@ Connect via ssh `ssh pi@[ip-address]`
 
 ## Arduino part
 
-README in [Arduino](/Arduino/) folder.
+README in [Arduino](/arduino/) folder.
 
 ## Raspberry part
 

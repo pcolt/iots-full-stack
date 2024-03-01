@@ -34,15 +34,15 @@ while True:
   line = ser.readline().decode('utf-8').rstrip()    # read first complete line from serial communication
   print(line)
 
-  if not line and not line.isnumeric():         # write 0 if value not valid because not a number
+  if not line and not line.isnumeric():         # continue if value not valid because not a number
     print("Serial value is not numeric")
-    writeToInfluxDB(0)
+    # writeToInfluxDB(0)
     continue
 
   lineNumber = int(line)
-  if 0 > lineNumber > 1023:                     # write 0 if value not valid beacause out of range (analog to digital)
+  if 0 > lineNumber > 1023:                     # continue if value not valid beacause out of range (analog to digital)
     print("Serial value is out of range")
-    writeToInfluxDB(0)
+    # writeToInfluxDB(0)
     continue
 
   writeToInfluxDB(lineNumber)

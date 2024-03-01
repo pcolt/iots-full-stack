@@ -1,6 +1,6 @@
 # Frontend
 
-<img src="/pictures/doughnut-chart.png" alt="Frontend screenshot" title="Frontend screenshot" height="350"/>
+<img src="/pictures/doughnut-chart-window.png" alt="Frontend screenshot" title="Frontend screenshot" height="350"/>
 
 ## React + TypeScript + Vite
 

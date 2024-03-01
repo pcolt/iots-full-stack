@@ -1,7 +1,8 @@
 # 🧮 IoTs data full-stack project
 
 A project to experiment with IoTs, data handling and web apps.  
-This project gets inspiration from [Fybra - Indoor air quality](https://fybra.co/).  
+The project has also a related tutorial on [Medium](https://medium.com/@pcolturi/iots-light-sensor-full-stack-project-with-arduino-raspberry-python-influxdb-typescript-express-194b10023f54) (wrok in progress).  
+The project gets an initial inspiration from a job interview I had with the guys of [Fybra - Indoor air quality](https://fybra.co/) more specifically with their tech lead [Davide Violante](https://github.com/DavideViolante).  
 
 - ✅ step 1: an [Arduino](/arduino/) with analog photoresistor converts data to digital, which is sent serially through usb to a [Raspberry](/raspberry/) which (optionally sends the data via MQTT pub/sub protocoll to an other Raspberry who acts as broker who then) sends the data to Influxdata cloud database
 - ✅ step 2: [Backend](/backend/) in Node.js that queries the data from InfluxDb and serves it with Express 

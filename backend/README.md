@@ -2,7 +2,7 @@
 
 Backend in Node.js that queries the data from InfluxDb, the data is served as REST api or as single-page web application (experiment with Google Cloud Functions)
 
-<img src="/backend-api.png" alt="Backend screenshot" title="Backend screenshot" height="350"/>
+<img src="/pictures/backend-api.png" alt="Backend screenshot" title="Backend screenshot" height="350"/>
 
 
 ## Install

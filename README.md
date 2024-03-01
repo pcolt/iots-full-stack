@@ -23,15 +23,19 @@ Connect via ssh `ssh pi@[ip-address]`
 
 ## Arduino part
 
-README in [Arduino](/arduino/) folder.
+Check README.md in [arduino](/arduino/) folder
 
 ## Raspberry part
 
-README in [Raspberry](/raspberry/) folder.
+Check README.md in [raspberry](/raspberry/) folder
 
 ## Backend part
 
-README in [Backend](/backend/) folder.
+Check README.md in [backend](/backend/) folder
+
+## Frontend part
+
+Check README.md in [frontend](/fackend/) folder
 
 ## General
 

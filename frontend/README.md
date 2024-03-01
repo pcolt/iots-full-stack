@@ -2,6 +2,17 @@
 
 <img src="/pictures/doughnut-chart-window.png" alt="Frontend screenshot" title="Frontend screenshot" height="350"/>
 
+## Install
+
+Install dependencies: `npm install`
+
+## Usage
+
+- Start in dev: `npm run dev` and watch on http://localhost:5173/  
+- Compile and build: `npm run build`  
+after starting the backend watch on http://localhost:3000/  
+- Lint the code: `npm run lint`  
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

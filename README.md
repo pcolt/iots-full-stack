@@ -35,7 +35,7 @@ Check README.md in [backend](/backend/) folder
 
 ## Frontend part
 
-Check README.md in [frontend](/fackend/) folder
+Check README.md in [frontend](/frontend/) folder
 
 ## General
 

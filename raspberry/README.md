@@ -1,6 +1,6 @@
 # Raspberry
 
-<img src="/raspberry/raspberrypi_arduino_uno_serial_usb.png" alt="Circuit diagram" title="Circuit diagram" height="350"/>
+<img src="/raspberry/raspberrypi_arduino_uno_serial_usb.png" alt="Circuit diagram" title="Circuit diagram" width="900"/>
 
 # 📚 Working notes
 
@@ -17,11 +17,11 @@ Connect via ssh `ssh pi@[ip-address]`
 
 ### Virtualenv
 
-Install packages via virtual env [tutorial](https://www.baeldung.com/linux/pip-fix-externally-managed-environment-error)
+Install packages via virtual env. [docs](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#install-packages-in-a-virtual-environment-using-pip-and-venv)
 - install venv `sudo apt install python3-venv`
-- create virtual envoirment `python3 -m venv ~/mypythonvirtualenv`
-- activate `source mypythonvirtualenv/bin/activate`  
-`(mypythonvirtualenv) $`
+- create virtual envoirment `python3 -m venv .venv`
+- activate `source .venv/bin/activate`  
+`(.venv) $`
 - install needed packages `pip install influxdb3-python`
 
 In VSCode activate the environment with `Ctrl+Shift+P` and search for `Python: Select Interpreter`
@@ -32,6 +32,7 @@ $ virtualenv <env_name>
 $ source <env_name>/bin/activate
 (<env_name>)$ pip install -r path/to/requirements.txt
 ```
+In order to create the requirements.txt from terminal with activated virtualenv `python3 -m pip freeze > requirements.txt` 
 
 ### Dot.env
 
